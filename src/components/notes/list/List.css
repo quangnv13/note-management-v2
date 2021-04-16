@@ -1,0 +1,11 @@
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.note-card {
+  margin: 10px;
+}
+
+.note-card:hover {
+  background-color: aliceblue;
+}
