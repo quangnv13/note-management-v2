@@ -5,8 +5,9 @@ import Note from "./components/notes/Note";
 import { Snackbar } from "@material-ui/core";
 import MuiAlert from "@material-ui/lab/Alert";
 import { CONTROL } from "./components/const/actionsConst";
-import { AppContext } from "./components/context/AppContext";
-import { NoteContextProvider } from "./components/context/NoteContext";
+import {
+  AppContext,
+} from "./components/context/AppContext";
 
 function App() {
   const { appState, appDispatch } = useContext(AppContext);
@@ -23,7 +24,7 @@ function App() {
   const showLoginForm = !isLogged ? <Login></Login> : <Note></Note>;
 
   return (
-    <NoteContextProvider>
+    <>
       {showLoginForm}
       <Snackbar
         open={isShowNotify}
@@ -34,7 +35,7 @@ function App() {
           {notifyMessage}
         </Alert>
       </Snackbar>
-    </NoteContextProvider>
+    </>
   );
 }
 

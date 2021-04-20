@@ -8,7 +8,7 @@ const AUTH = {
 };
 
 const NOTE = {
-  CREATE: "ADD",
+  CREATE: "CREATE",
   UPDATE: "UPDATE",
   FAVORITE: "FAVORITE",
   DELETE: "DELETE",
